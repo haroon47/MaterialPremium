@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_pten"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/color_toolbarcolor_pten"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="3.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0">
+
+                <ImageView
+                    android:id="@+id/img_arrow_back_pten"
+                    android:layout_width="12.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="start|center"
+                    android:background="@drawable/ic_arrow_left_profile_account_info"
+                    android:gravity="center"
+                    android:rotationY="180" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_profile_pten"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:text="Profile"
+                android:textColor="@color/color_white_pten"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/img_settings_pten"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="end|center"
+                    android:background="@drawable/ic_settings_profile_account_info" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/color_white_pten"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_propic_pten"
+                    android:layout_width="90.0dip"
+                    android:layout_height="90.0dip"
+                    android:layout_gravity="center"
+                    android:src="@drawable/photo_male_6"
+                    android:layout_marginTop="20.0dip"
+                    app:civ_border_color="@color/colorWhites_p08"
+                    app:civ_border_width="3.0dip" />
+
+                <TextView
+                    android:id="@+id/tv_username_pten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:text="Haroon Fazal"
+                    android:textColor="@color/color_profilename_pten"
+                    android:textSize="18.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_userprofile_pten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Graphic design"
+                    android:textColor="@color/color_userprofile_pten"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_userdescription_pten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:text="I am available for chat"
+                    android:textColor="@color/color_userdescription_pten"
+                    android:textSize="16.0sp" />
+
+                <LinearLayout
+                    android:id="@+id/btn_twitter_pten"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@drawable/style_twitter_btn_profile_account_info"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txt_twitter_pten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect with Twitter"
+                        android:textColor="@color/color_white_pten"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btn_fb_pten"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:background="@drawable/style_fb_btn_profile_account_info"
+                    android:gravity="center"
+                    android:textSize="16.0sp">
+
+                    <TextView
+                        android:id="@+id/txt_fb_pten"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connect with Facebook"
+                        android:textColor="@color/color_white_pten"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:textSize="16.0sp">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="#ffcccccc" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="47.0dip"
+                        android:background="@color/color_aiback_pten">
+
+                        <TextView
+                            android:id="@+id/txt_accinfo_pten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="47.0dip"
+                            android:layout_marginTop="20.0dip"
+                            android:textAllCaps="false"
+                            android:text="Account Information"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_accinfo_pten"
+                            android:textSize="18.0sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="#ffcccccc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="5.0dip">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:minHeight="50.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_name_pten"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_profiledet_pten"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/data_name_pten"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="Haroon Fazal"
+                            android:textColor="@color/color_profiledatail_pten"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:background="#ffcccccc" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:minHeight="50.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_email_pten"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_profiledet_pten"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/data_email_pten"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="haroonfazal@outlook.com"
+                            android:textColor="@color/color_profiledatail_pten"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:background="#ffcccccc" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:minHeight="50.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_phone_pten"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phone"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_profiledet_pten"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/data_phone_pten"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="+92 3310331555"
+                            android:textColor="@color/color_profiledatail_pten"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:background="#ffcccccc" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:minHeight="50.0dip"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_address_pten"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:textStyle="bold"
+                            android:textColor="@color/color_profiledet_pten"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:id="@+id/data_address_pten"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2.0dip"
+                            android:text="Park Road, Chak Shehzad Islamabad,Pakistan"
+                            android:textColor="@color/color_profiledatail_pten"
+                            android:textSize="18.0sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

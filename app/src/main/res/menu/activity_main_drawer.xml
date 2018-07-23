@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/signUp"
+            android:title="Sign Up Screens" />
+        <item
+            android:id="@+id/signIn"
+            android:title="Login Screens" />
+
+        <item
+            android:id="@+id/profile"
+            android:title="Profile Screens" />
+
+        <item
+            android:id="@+id/dashboard"
+            android:title="Dashboard Screen" />
+
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

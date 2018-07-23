@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/image_bg_signin_five"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/image_bg_signin_five"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24.0dip"
+        android:background="@color/colorPrimary_signin_five"
+        app:contentInsetEnd="0.0dip"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetRight="0.0dip"
+        app:contentInsetStart="0.0dip">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ic_logo_mountify_signin_five"
+        android:layout_width="120.0dip"
+        android:layout_height="120.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90.0dip" />
+
+    <EditText
+        android:id="@+id/editTxtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/ic_logo_mountify_signin_five"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/shape_rectangle_white_round_corner_signin_five"
+        android:hint="     Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="12.0dip"
+        android:paddingTop="12.0dip"
+        android:textColor="@color/coloeEditText_signin_five"
+        android:textColorHint="@color/coloeEditText_signin_five" />
+
+    <EditText
+        android:id="@+id/editTxtPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTxtEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/shape_rectangle_white_round_corner_signin_five"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:paddingBottom="12.0dip"
+        android:paddingTop="12.0dip"
+        android:textColor="@color/coloeEditText_signin_five"
+        android:textColorHint="@color/coloeEditText_signin_five" />
+
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTxtPassword"
+        android:layout_marginTop="20.0dip"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape_rectangle_green_round_corner_signin_five"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12.0dip"
+        android:paddingTop="12.0dip"
+        android:text="Sign in"
+        android:textColor="@color/colorWhite_signin_five"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/tvForgotPwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_signIn_fb"
+        android:gravity="center_horizontal"
+        android:text="Forgot your password?"
+        android:textColor="@color/colorWhite_signin_five"
+        android:textSize="15.0sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_signIn_fb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/shape_rectangle_blue_round_corner_signin_five">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="12.0dip">
+
+
+            <ImageView
+                android:id="@+id/fbLogo"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_facebook_logo_signin_five" />
+            <TextView
+                android:id="@+id/tvSignInWithFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign in with Facebook"
+                android:textColor="@color/colorWhite_signin_five"
+                android:textSize="16.0sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/image_back_arrow"
+            android:layout_width="40.0dip"
+            android:layout_height="60.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:rotationY="180"
+            android:src="@drawable/ic_action_back_arrow_signin_five" />
+
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Sign in"
+            android:textColor="@color/colorWhite_signin_five"
+            android:textSize="20.0sp" />
+    </RelativeLayout>
+</RelativeLayout>

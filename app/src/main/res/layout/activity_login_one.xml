@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/ssevenbgsseven"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ssevenbgsseven"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="24.0dip"
+        android:background="@android:color/transparent"
+        app:contentInsetStart="0.0dip"
+        app:popupTheme="@style/AppThemesseven.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="10.0dip"
+                android:padding="7.0dip"
+                android:rotationY="180"
+                android:src="@drawable/arrow_signin_seven"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textColor="@android:color/white"
+                android:textSize="20.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/imageView" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="70.0dip">
+
+        <EditText
+            android:id="@+id/emailet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/et_border_signin_seven"
+            android:hint="Email"
+            android:padding="15.0dip"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorethintsseven"
+            android:textSize="18.0sp" />
+
+        <EditText
+            android:id="@+id/passwordet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailet"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/et_border_signin_seven"
+            android:hint="Password"
+            android:padding="15.0dip"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorethintsseven"
+            android:textSize="18.0sp" />
+
+        <LinearLayout
+            android:id="@+id/linecb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/passwordet"
+            android:layout_marginTop="29.0dip">
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linecb"
+            android:layout_marginTop="25.0dip"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/btn_border_signin_seven"
+            android:text="Signin"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17.0dip" />
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_signin"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="50.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/devider_signin_seven" />
+
+            <TextView
+                android:id="@+id/txt_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="or connect with"
+                android:textColor="@android:color/white"
+                android:textSize="17.0dip" />
+
+            <ImageView
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/devider_signin_seven" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="20.0dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/button_fb"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1.0"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/social_btn_border_seven"
+                android:rotationY="180">
+
+                <TextView
+                    android:id="@+id/tv_fb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="-10.0dip"
+                    android:drawableStart="@drawable/ic_action_facebook_signin_seven"
+                    android:gravity="center"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:rotationY="180"
+                    android:text="Facebook"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button_tw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/social_btn_border_rsseven"
+                android:rotationY="180">
+
+                <TextView
+                    android:id="@+id/tv_twitter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="-20.0dip"
+                    android:drawableStart="@drawable/ic_action_twitter_signin_seven"
+                    android:gravity="center"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip"
+                    android:rotationY="180"
+                    android:text="Twitter"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_fp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_signin"
+            android:layout_alignEnd="@+id/passwordet"
+            android:gravity="end"
+            android:text="Forgot password?"
+            android:textColor="@color/boardshapssix"
+            android:textSize="16.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

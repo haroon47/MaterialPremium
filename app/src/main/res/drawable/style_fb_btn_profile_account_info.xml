@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:thickness="2.0dip">
+    <solid android:color="@color/color_twitterbtn_pten" />
+    <padding
+        android:bottom="10.0dip"
+        android:left="10.0dip"
+        android:right="10.0dip"
+        android:top="10.0dip" />
+    <corners
+        android:bottomLeftRadius="5.0dip"
+        android:bottomRightRadius="5.0dip"
+        android:topLeftRadius="5.0dip"
+        android:topRightRadius="5.0dip" />
+    <stroke
+        android:width="0.5dip"
+        android:color="@color/color_twitterbtn_pten" />
+    <stroke android:color="@color/color_twitterbtn_pten" />
+</shape>

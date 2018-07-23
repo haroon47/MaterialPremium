@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="haroonstudios.logindesign.com.materialpremium">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SignIn.LoginOneActivity" />
+        <activity android:name=".SignIn.LoginTwoActivity" />
+        <activity android:name=".SignIn.LoginThreeActivity" />
+        <activity android:name=".SignIn.LoginFourActivity" />
+        <activity android:name=".SignIn.LoginFiveActivity" />
+        <activity android:name=".SignIn.LoginSixActivity" />
+        <activity android:name=".SignIn.LoginSevenActivity" />
+        <activity android:name=".SignIn.LoginEightActivity" />
+        <activity android:name=".SignIn.LoginNineActivity" />
+        <activity android:name=".SignIn.LoginTenActivity" />
+        <activity android:name=".SignUp.SignUpActivityOne" />
+        <activity android:name=".SignUp.SignUpActivityTwo" />
+        <activity android:name=".Profile.ProfileOneActivity" />
+        <activity android:name=".Dashboard.DashboardOneActivity" />
+        <activity android:name=".Dashboard.DashboardTwoActivity" />
+        <activity android:name=".SignIn.LoginElevenActivity" />
+        <activity android:name=".Profile.ProfileTwoActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".SignIn.LoginTwelveActivity" />
+        <activity android:name=".DashboardActivity"></activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,114 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+
+    <style name="AppThemesseven" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimarySseven</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryzDarksseven</item>
+        <item name="colorAccent">@color/colorAccentSseven</item>
+    </style>
+    <style name="AppThemesseven.NoActionBar" parent="@style/AppThemesseven">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="text_style_snine" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/textColorSNine</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="AppThemesfourteen" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppThemesfourteen.NoActionBar" parent="@style/AppThemesfourteen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="app_title_text_sfourteen">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:padding">10.0dip</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <style name="text_style_main_sfourteen">
+        <item name="android:textSize">28.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">15.0dip</item>
+    </style>
+
+
+
+    <style name="text_style_sfourteen">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">30.0dip</item>
+    </style>
+
+
+    <style name="txt_white_simple_s07">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white_s07</item>
+    </style>
+
+    <style name="title_regular_style_s07">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+
+    <style name="AppThemessix.NoActionBar" parent="@style/AppThemessix">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="AppThemessix" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimaryssix</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkssix</item>
+        <item name="colorAccent">@color/colorAccentssix</item>
+    </style>
+
+</resources>

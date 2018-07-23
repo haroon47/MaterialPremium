@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ic_back_s07"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/ic_back_s07"
+        android:scaleType="centerCrop" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="25.0dip"
+        android:background="@android:color/transparent"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetStart="0.0dip">
+
+        <ImageView
+            android:layout_width="35.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="start|center"
+            android:padding="2.0dip"
+            android:rotationY="180"
+            android:src="@drawable/ic_arrow_back_signup_seven" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:weightSum="3.0">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_pic_suseven"
+                android:layout_width="fill_parent"
+                android:layout_height="90.0dip"
+                app:civ_border_color="#ffffffff"
+                android:src="@drawable/abc"
+                app:civ_border_width="3.0dip" />
+
+            <TextView
+                android:id="@+id/title_email"
+                style="@style/title_regular_style_s07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:text="john_doe@gmail.com" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/enter_code"
+                style="@style/txt_white_simple_s07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5.0dip"
+                android:text="Enter code"
+                android:textColor="@color/back_tint_s07"
+                android:textSize="14.0sp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:inputType="textPassword"
+                android:paddingBottom="15.0dip"
+                android:textColor="@color/white_s07" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_confirmation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="We've sent the confirmation code to your email."
+                    android:textColor="@color/back_tint_s07"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/txt_check_inbox"
+                    style="@style/txt_white_simple_s07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please check your inbox"
+                    android:textColor="@color/back_tint_s07"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/txt_resend"
+                    style="@style/txt_white_simple_s07"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15.0dip"
+                    android:text="Resend"
+                    android:textColor="@color/white_s07"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70.0dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="40.0dip"
+                    android:background="@drawable/ic_btn_bg_signup_seven"
+                    android:text="Sign up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_s07"
+                    android:textSize="16.0sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_all_acc"
+                        style="@style/txt_white_simple_s07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Already have an account?" />
+
+                    <TextView
+                        android:id="@+id/txt_signin"
+                        style="@style/txt_white_simple_s07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign in" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

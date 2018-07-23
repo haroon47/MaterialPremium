@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/homescreenssix"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/homescreenssix"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27.0dip"
+        android:background="@android:color/transparent"
+        app:contentInsetEnd="0.0dip"
+        app:contentInsetLeft="0.0dip"
+        app:contentInsetRight="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:popupTheme="@style/AppThemessix.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_alignParentTop="true"
+                android:rotationY="180"
+                android:src="@drawable/ic_backarrowsigninsix" />
+
+            <TextView
+                android:id="@+id/tv_Signin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@id/imageView"
+                android:gravity="center"
+                android:text="Sign In"
+                android:textColor="@color/boardshapssix"
+                android:textSize="22.0dip" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/dfgdff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="118.0dip">
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="fill_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16.0dip"
+            android:hint="Email"
+            android:background="@drawable/boardshap_signin_six"
+            android:inputType="textEmailAddress"
+            android:padding="15.0dip"
+            android:textColor="@color/txtcolor_emailssix"
+            android:textColorHint="@color/txtcolor_emailssix"
+            android:textSize="16.0dip" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_email"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/boardshap_signin_six"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15.0dip"
+            android:textColor="@color/txtcolor_emailssix"
+            android:textColorHint="@color/txtcolor_emailssix"
+            android:textSize="16.0dip" />
+
+        <LinearLayout
+            android:id="@+id/RelativeLayout_remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_password"
+            android:layout_marginTop="29.0dip"
+            android:layout_alignEnd="@+id/edt_password"
+            android:layout_alignStart="@+id/edt_password">
+
+            <CheckBox
+                android:id="@+id/remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/checkbox_selectorssix"
+                android:text="Remember me"
+                android:gravity="left"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/boardshapssix"
+                android:textSize="16.0dip" />
+
+            <TextView
+                android:id="@+id/tv_forgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Forgot password?"
+                android:layout_marginStart="36dp"
+                android:textColor="@color/boardshapssix"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_btnsign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RelativeLayout_remember">
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48.0dip"
+                android:background="@drawable/sign_upbtnssix"
+                android:padding="8.0dip"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textColor="@color/boardshapssix"
+                android:textSize="20.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dfgdff"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20.0dip">
+
+        <TextView
+            android:id="@+id/dont_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/Dont_accountssix"
+            android:textColor="@color/boardshapssix"
+            android:textSize="16.0dip" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
